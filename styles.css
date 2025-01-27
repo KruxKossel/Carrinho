@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 50%; /* Largura fixa */
+    max-width: 800px; /* Largura máxima */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: auto; /* Adiciona o scroll vertical */
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Largura máxima dos campos */
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px; /* Altura maior para o campo de descrição */
+}
+
+input.small-field, select.small-field {
+    width: 50%; /* Largura menor para os campos específicos */
+}
+
+button {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto; /* Ajusta o tamanho automaticamente */
+    max-width: 200px; /* Largura máxima para o botão */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.green-button {
+    background-color: #28a745; /* Verde */
+}
+
+button.green-button:hover {
+    background-color: #218838;
+}
+
+button.red-button {
+    background-color: #dc3545; /* Vermelho */
+}
+
+button.red-button:hover {
+    background-color: #c82333;
+}
+
+a {
+    text-decoration: none;
+}
+
+#viewProductsButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#resetStorageButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.left-button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    max-height: 300px; /* Altura máxima para a tabela */
+    overflow-y: auto; /* Adiciona o scroll vertical na tabela */
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+td.details-cell {
+    width: 100px; /* Define uma largura menor para a célula de detalhes */
+}
